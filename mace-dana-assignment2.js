@@ -35,3 +35,8 @@ console.log('"No, I\'m broke." I sadly said.');
 }
 };
 
+//OUTPUT
+console.log("I went to the airport yesterday to fly my Cessna 140. The weather was perfect. James, a friend of mine asked if I was available to give his 13 year old daughter a flight lesson.");
+console.log('"Will you take her up and see if she likes it enough for me to pay for this?" He asked.  "Gas is pretty expensive nowadays and I do not want to waste money if she is not going to like it anyway"');
+airportWithOkayPricedFuel(6.98);
+
