@@ -52,6 +52,16 @@ var thought = ("Almost in tears from exhaustion and the shear thought of one mor
 return thought;
 };
 
+//Boolean Function
+var getMoreFuel = function (creditCard, toppedOffPlane) {
+if ((creditCard > 185.40) && ((toppedOffPlane === "credit") || (toppedOffPlane === "cash"))) {
+console.log('"In that case, I\'ll be paying with the plastic."');
+return true;
+} else {
+console.log('"I have to run to the bank.  I don\'t have enough cash."');
+return false;
+}
+};
 
 //OUTPUT
 console.log("I went to the airport yesterday to fly my Cessna 140. The weather was perfect. James, a friend of mine asked if I was available to give his 13 year old daughter a flight lesson.");
@@ -66,4 +76,6 @@ console.log("I really don't have the time.  I have 3 children at home and am wor
 var tearsOfJoy = getFeelings('"I am so busy and tired, yet very excited!', ', I get to fly again on a regular basis, while someone else pays for it!"');
 console.log(tearsOfJoy);
 
-
+console.log("After saying good-bye to Bob and his daughter, I decided to go back up for some fun of my own.  I had a blast.  However, when I landed, my fuel indicator was on empty.");
+console.log('After refueling, the fuel guy remarked, "Gas is cheaper than it was yesterday, $6.18 a gallon.  I\'ve topped it off for you.  It\'s $185.40.  How would you like to pay?" I swallowed abruptly and sighed.  Hesitantly, wishing that someone else was paying for it this time, I said, "Do you take credit cards yet or should I pay with cash?"');
+getMoreFuel(200, "credit")
