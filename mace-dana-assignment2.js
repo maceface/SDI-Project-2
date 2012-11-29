@@ -17,4 +17,12 @@ var greetByName = function(name) {
 
 greetByName("Lee!")
 
-//
+
+
+//VARIABLES
+var cities = ["New York", "Charlotte", "Fort Lauderdale"];
+var fuelPrices = [7.89, 7.29, 6.98];
+var bestFuelPrice = 6.18
+
+//FUNCTIONS
+//Procedure
