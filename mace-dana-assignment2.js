@@ -96,4 +96,4 @@ for (var i = 0; i > prices.length; i--) {
 console.log(cities[i] + " was $" + prices[i] + "per gallon. It was " + highPrices[i] + " craziness!");
 };
 
-
+console.log('"I guess I won\'t feel completely guilty for spending that kind of money on fuel...it was the cheapest on the East Coast!" I thought quietly to myself as my husband sat next to me doing bills and working on our budget!);
