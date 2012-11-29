@@ -62,6 +62,8 @@ console.log('After taking her up for about an hour, we landed.  I let her stay o
 var finaInstructorCost = getInstructorPrice(150);
 console.log(finaInstructorCost);
 
-
+console.log("I really don't have the time.  I have 3 children at home and am working on another degree online in Mobile Development.  Fortunately, this is just the thing I need to make sure I keep flying and stay current.  It's a great excuse to get out to the airport.  I guess I'\ll be excited!")
+var tearsOfJoy = getFeelings('"I am so busy and tired, yet very excited!', ', I get to fly again on a regular basis, while someone else pays for it!"');
+console.log(tearsOfJoy);
 
 
