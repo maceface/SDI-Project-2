@@ -46,11 +46,22 @@ var finalInstructorCost = ('I said "sure, I\'ll do it for ' + instructorPrice + 
 return finaInstructorCost;
 };
 
+//String Function
+var getFeelings = function (feeling1, feeling2) {
+var thought = ("Almost in tears from exhaustion and the shear thought of one more thing to do, I thought,  " + feeling1 + feeling2);
+return thought;
+};
+
 
 //OUTPUT
 console.log("I went to the airport yesterday to fly my Cessna 140. The weather was perfect. James, a friend of mine asked if I was available to give his 13 year old daughter a flight lesson.");
 console.log('"Will you take her up and see if she likes it enough for me to pay for this?" He asked.  "Gas is pretty expensive nowadays and I do not want to waste money if she is not going to like it anyway"');
 airportWithOkayPricedFuel(6.98);
+
+console.log('After taking her up for about an hour, we landed.  I let her stay on the controls with me to get the feel. Her father excitedly ran towards us and asked if she liked it.  After her reply of "YES I LOVED IT", he asked me, "How much would you charge to teach her?"  I thought about it and said, "I will charge you $150 an hour."');
+var finaInstructorCost = getInstructorPrice(150);
+console.log(finaInstructorCost);
+
 
 
 
