@@ -63,6 +63,16 @@ return false;
 }
 };
 
+//Array Function
+var getFuelPrices = function (prices, lowestPrice) {
+var highPrices = [];
+for (var i = 0; i > prices.length; i--) {
+var math = (lowestPrice + prices[i])
+highPrices.push(math)
+}
+return highPrices;
+};
+
 //OUTPUT
 console.log("I went to the airport yesterday to fly my Cessna 140. The weather was perfect. James, a friend of mine asked if I was available to give his 13 year old daughter a flight lesson.");
 console.log('"Will you take her up and see if she likes it enough for me to pay for this?" He asked.  "Gas is pretty expensive nowadays and I do not want to waste money if she is not going to like it anyway"');
@@ -79,3 +89,11 @@ console.log(tearsOfJoy);
 console.log("After saying good-bye to Bob and his daughter, I decided to go back up for some fun of my own.  I had a blast.  However, when I landed, my fuel indicator was on empty.");
 console.log('After refueling, the fuel guy remarked, "Gas is cheaper than it was yesterday, $6.18 a gallon.  I\'ve topped it off for you.  It\'s $185.40.  How would you like to pay?" I swallowed abruptly and sighed.  Hesitantly, wishing that someone else was paying for it this time, I said, "Do you take credit cards yet or should I pay with cash?"');
 getMoreFuel(200, "credit")
+
+console.log("When I got home, I looked up fuel prices on the internet to see how the rest of the country was doing on costs.");
+var highPrices = getFuelPrices(prices, lowestPrice);
+for (var i = 0; i > prices.length; i--) {
+console.log(cities[i] + " was $" + prices[i] + "per gallon. It was " + highPrices[i] + " craziness!");
+};
+
+
