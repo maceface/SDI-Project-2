@@ -26,3 +26,11 @@ var bestFuelPrice = 6.18
 
 //FUNCTIONS
 //Procedure
+var getBestFuelPrices = function (airportWithOkayPricedFuel) {
+var localAirportPrice = 6.18;
+if (localAirportPrice < airportWithOkayPricedFuel) {
+console.log('"For sure," I said, "gas ain\'t gettin\' any cheaper, and I still need to fly to keep up my flight ratings.');
+} else {
+console.log('"No, I\'m broke." I sadly said.');
+}
+};
