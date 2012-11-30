@@ -15,7 +15,9 @@ var greetByName = function(name) {
     console.log("Good " + timeOfDay + ", " + name);
 };
 
-greetByName("Lee!")
+greetByName("Mr. Lewis!")
+
+//This is cool!
 
 
 
@@ -27,50 +29,56 @@ var bestFuelPrice = 6.18
 //FUNCTIONS
 //Procedure
 var getBestFuelPrices = function (fuelPrices) {
-var localAirportPrice = 6.18;
-if (localAirportPrice < fuelPrices) {
-console.log('"For sure," I said, "gas ain\'t gettin\' any cheaper, and I still need to fly to keep up my flight ratings."');
-} else {
-console.log('"No, I\'m broke." I sadly said.');
-}
+    var localAirportPrice = 6.18;
+    if (localAirportPrice < fuelPrices) {
+        console.log('"For sure," I said, "gas ain\'t gettin\' any cheaper, and I still need to fly to keep up my flight ratings."');
+        } else {
+        console.log('"No, I\'m broke." I sadly said.');
+        }
 };
 
 //Number Function
 var getInstructorPrice = function (instructorPrice) {
 var aveInstructorPrice = 150;	
-while (instructorPrice >= 100) {
-console.log('I told him, "For you, I\'ll charge ' + instructorPrice + ' dollars an hour." James looked at me for a moment and said, "Will you do it for "' + (aveInstructorPrice - instructorPrice) + '" dollars per hour as a friendly friend price?"');
-instructorPrice-=20;
-}
+    while (instructorPrice >= 100) {
+        console.log('I told him, "For you, I\'ll charge ' + instructorPrice + ' dollars an hour." James looked at me for a moment and said, "Will you do it for "' + (aveInstructorPrice - instructorPrice) + '" dollars per hour as a friendly friend price?"');
+        instructorPrice-=20;
+    }
 var finalInstructorCost = ('I said "sure, I\'ll do it for ' + instructorPrice + ' dollars an hour just for you." You could hear the excitement in his voice, as if he were the one going to be taking lessons!  He looked at me and said, "So when\'s her next flight?!"');
-return finaInstructorCost;
+return finalInstructorCost;
+
 };
+
+//just can't figure out what I've done wrong here.  I know that somewhere a variable is not defined.
+//Oh well, I've only been doing this for 5 days!!
+
+
 
 //String Function
 var getFeelings = function (feeling1, feeling2) {
-var thought = ("Almost in tears from exhaustion and the shear thought of one more thing to do, I thought,  " + feeling1 + feeling2);
-return thought;
+    var thought = ("Almost in tears from exhaustion and the shear thought of one more thing to do, I thought,  " + feeling1 + feeling2);
+    return thought;
 };
 
 //Boolean Function
 var getMoreFuel = function (creditCard, toppedOffPlane) {
-if ((creditCard > 185.40) && ((toppedOffPlane === "credit") || (toppedOffPlane === "cash"))) {
-console.log('"In that case, I\'ll be paying with the plastic."');
-return true;
-} else {
-console.log('"I have to run to the bank.  I don\'t have enough cash."');
-return false;
-}
+    if ((creditCard > 185.40) && ((toppedOffPlane === "credit") || (toppedOffPlane === "cash"))) {
+    console.log('"In that case, I\'ll be paying with the plastic."');
+    return true;
+        } else {
+        console.log('"I have to run to the bank.  I don\'t have enough cash."');
+        return false;
+    }
 };
 
 //Array Function
 var getFuelPrices = function (prices, lowestPrice) {
-var highPrices = [];
-for (var i = 0; i < prices.length; i++) {
-var math = (lowestPrice - prices[i])
-highPrices.push(math)
-}
-return highPrices;
+    var highPrices = [];
+    for (var i = 0; i < prices.length; i++) {
+        var math = (lowestPrice - prices[i])
+        highPrices.push(math)
+        }
+    return highPrices;
 };
 
 //OUTPUT
@@ -93,7 +101,7 @@ getMoreFuel(200, "credit")
 console.log("When I got home, I looked up fuel prices on the internet to see how the rest of the country was doing on costs.");
 var highPrices = getFuelPrices(prices, lowestPrice);
 for (var i = 0; i < prices.length; i++) {
-console.log(cities[i] + " was $" + prices[i] + "per gallon. It was " + highPrices[i] + " craziness!");
+    console.log(cities[i] + " was $" + prices[i] + "per gallon. It was " + highPrices[i] + " craziness!");
 };
 
 console.log('"I guess I won\'t feel completely guilty for spending that kind of money on fuel...it was the cheapest on the East Coast!" I thought quietly to myself as my husband sat next to me doing bills and working on our budget!');
