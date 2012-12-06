@@ -298,7 +298,31 @@ var boughtAmox = function (pharmaceyPrice) {
 
 };
 
+//Function - return object
 
+var giveMedicine = function () {
+
+        return maceDad.children[0, 1, 2];
+
+};
+
+ 
+
+//Function - boolean argument and use of JSON data
+
+var goToBedEarly = function (kidsStillSick) {
+
+        if (kidsStillSick) {
+
+               console.log("Onces the kids all got their baths and the PJs were on, Dana\'s hubby, " + maceDad["name"] + " got home.  He helped put the sick babies down for bed.  After which Dana and Jesse got out the instruments.  While he was " + maceDad.hobbies[0] + ", Dana was " + maceMom.hobbies[0]trip + ".  Once the stress was relieved, they went to bed only to relive another crazy day with sick children.");
+
+        } else {
+
+               console.log("Dana and Jesse were tired and went to bed with the kids.  Maybe some rest would help them avoid whatever the children have.")
+
+        }
+
+};
 
     
 //String Function
