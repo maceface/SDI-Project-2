@@ -260,7 +260,21 @@ var watchMoreVideos = function (howManyMoreVideos) {
 
 };
 
+//Boolean Function - string argument, number argument, comparison, return boolean
 
+var getDoctor = function (fever, amoxAndTylenol) {
+
+        if ((fever > 102) && ((amoxAndTylenol === "available") || (gamePlatform === "not available"))) {
+
+               return true;
+
+        } else {
+
+               return false;
+
+        }
+
+};
 
     
 //String Function
