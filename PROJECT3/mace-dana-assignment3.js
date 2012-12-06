@@ -276,6 +276,30 @@ var getDoctor = function (fever, amoxAndTylenol) {
 
 };
 
+//String Function - string argument, string concatination, return string
+
+var takeTempAgain = function (temp1, temp2) {
+
+        var miserable = ("They both cried.  All they wanted to do was sleep " + temp1 + temp2);
+
+        return miserable;
+
+};
+
+ 
+
+//Number Function - number argument, output, return number
+
+var boughtAmox = function (pharmaceyPrice) {
+
+        var totalWithTax = (healthAccount + pharmaceyPrice);
+
+        return totalWithTax;
+
+};
+
+
+
     
 //String Function
 
