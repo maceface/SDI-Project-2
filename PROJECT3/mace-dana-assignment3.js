@@ -182,7 +182,7 @@ var maceMom = {
             
     };
     
-/Number Function - number argument, while loop, local variables, math, return string
+//Number Function - number argument, while loop, local variables, math, return string
 
 var timesWatchedVideos = function (watchedVideos) {
 
@@ -202,6 +202,66 @@ var timesWatchedVideos = function (watchedVideos) {
 
 };
 
+//Array Function - number argument, array argument, for loop, math, return array
+
+var getMyKidsRating = function (video, topRating) {
+
+        var notEvenClose = [];
+
+        for (var i = 0; i < video.length; i++) {
+
+               var math = (topRating - video[i].score)
+
+               notEvenClose.push(math)
+
+        }
+
+        return notEvenClose;
+
+};
+
+//Procedure - number argument, conditional, nested conditional
+
+var watchMoreVideos = function (howManyMoreVideos) {
+
+        var numberOfVideos = 20;
+
+        var platform = ("downstairs TV");
+
+        if (whereWatched < howManyMoreVideos) {
+
+               maceDad.changeName("Honey")
+
+               console.log('Dana thought to herself, "Wish my ' + maceDad.getName() + ' was here to watch more videos.  I can\'t take much more!"');
+
+               console.log('"Okay, what\'s next?" She said to the boys with a big smile on her face.');
+
+               console.log('"Can we watch Diego agian on the iPad?" Gannon asked.')
+
+                if (whereWatched === "numberWatched") {
+
+                       console.log('"No, the iPad has no charge right now to the battery, why don\'t we just listen to some Christmas music?" Dana said.');
+
+                       console.log('Gannon looked at his mommy with a scowl on his face and much disapointment.');
+
+               } else {
+
+                       console.log('"Sure, that will be even better," Dana said with a little excitement.  The sound of the TV was beginning to really wear on her last nerve.');
+
+                       console.log('"Here you go.  Lay down here and enjoy the show!"  Dana handed the boys the iPad where they were laying on the floor and walked away to go clean up some messes and change the baby\'s diaper.');
+
+               }
+
+        } else {
+
+               console.log('"Yeah, let\'s watch it together in the tent in your room with the baby.  It will be fun.  Like a miny campout, but in the hosue." Dana told the boys.');
+
+        }
+
+};
+
+
+
     
 //String Function
 
@@ -215,4 +275,3 @@ var waveBye = function (person) {
 //OUTPUT
 console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car.  She sort of wished it was her getting into the car.  She knew it was going to be a long day with 3 sick kids in the house.  Dana waved and said softly to herself, " + waveBye(Jesse));
 
-console.log()
