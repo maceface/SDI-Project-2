@@ -424,8 +424,29 @@ var boughtPrescription = boughtAmox(58);
 console.log("With the Rite Aid Wellness Card, Dana got a discount of " + pharmacyDiscount + " dollars. She was happy that she got everything including a candy bar for, " + boughtAmox + " dollars.");
 
 
- 
+ //Nested Loop, Object argument
 
+console.log("After watching the same 3 videos over and over for the entire day, it was time to eat dinner and get ready for bed.  But first, Dana asked them which was their favorite movie for the day.");
+
+var favoriteVideoOfTheDay = getMyKidsRating(maceMom.moviesAndShows, topRating);
+
+for (var i = 0; i < maceMom.moviesAndShows.length; i++) {
+
+        console.log(maceMom.moviesAndShows[i].name + " they gave a " + maceMom.moviesAndShows[i].myKidsRating + ". It was " + notEvenClose[i] + " pretty perfect.  Dana prepares herself for the simple fact that they'\ll probably want to watch the same ones tomorrow.");
+
+        console.log("The only thing that could change, is where they might watch it... ");
+
+        for (var w = 0; w < maceMom.moviesAndShows[i].whereWatched.length; w++) {
+
+               console.log("-" + maceMom.moviesAndShows[i].whereWatched[w]);
+
+        }
+
+};
+
+
+
+goToBedEarly(True);
 
 
 
