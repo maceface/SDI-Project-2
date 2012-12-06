@@ -361,3 +361,15 @@ console.log('"' + maceMom.changeName() + ' I\'m tired and don\'t feel good.  Can
 
 watchMoreVideos(3);
 
+
+console.log('Dana said, "I don\'t think we\'ll watch that many, but you can definitely watch as much as the day will permit."');
+
+var notEvenClose = timesWatchedVideos(100);
+
+console.log(notEvenClose);
+
+
+
+
+
+//"What would you like to watch first?" Dana asked.  "They both exclaimed, almost immediately, "DORA!"  Dana stopped and asked, "On a scale from 1 to 10, what would you give Dora?"  She knew they probably had no idea of what she was talking about!
