@@ -105,7 +105,95 @@ var maceMom = {
             },
             
 //Accessor Method
+
+            getJesse: function () {
+
+                  return maceDad.name;
+
+               },
+               
+//Mutator Method
+
+            changeJesseName: function (maceDad) {
+
+                       maceDad.name = honey;
+
+               },
+            
+    };
+    
+            moviesAndShows: [
+
+                       {
+
+                            name: "Velveteen Rabbit",
+
+                            dayLastWatched: "12/06/2012",
+
+                            whereWatched: ["MacBookPro", "downstairs TV", "iPad"],
+
+                            director: "Michael Landon Jr",
+
+                            writer: "Margery Williams",
+
+                            rating: "G",
+
+                            myKidsRating: 10
+
+                       },
+
+                       {
+
+                            name: "Dora the Explorer",
+
+                            releaseDate: "12/06/2012",
+
+                            whereWatched: ["Downstairs TV"],
+
+                            director: "Chris Guiford",
+
+                            writer: "Valerie Walsh",
+
+                            rating: "tvY",
+
+                            myKidsRating: 10
+
+                       },
+
+                       {
+
+                            name: "Go Diego Go",
+
+                            releaseDate: "12/06/2012",
+
+                            whereWatched: ["downstairs TV", "upstairs TV", "MacBookPro"],
+
+                            director: "Chris Guiford",
+
+                            writer: "Valerie Walsh",
+
+                            rating: "tvY",
+
+                            myKidsRating: 9.5
+
+                       }
+
+               ]
+            
+            
+};
+
+    
+//String Function
+
+var waveBye = function (person) {
+
+        return ('"Bye! ' + person.name + '."');
+
+};
             
             
 //OUTPUT
-console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car and wished that she was the one leaving for the day.  She knew it was going to be a long, tough day with 3 sick kids.")
+console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car.  She sort of wished it was her getting into the car.  She knew it was going to be a long day with 3 sick kids in the house.  Dana waved and said softly to herself, " + waveBye(Jesse));
+
+console.log()
