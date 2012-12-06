@@ -264,7 +264,7 @@ var watchMoreVideos = function (howManyMoreVideos) {
 
 var getDoctor = function (fever, amoxAndTylenol) {
 
-        if ((fever > 102) && ((amoxAndTylenol === "available") || (gamePlatform === "not available"))) {
+        if ((fever > 102) && ((amoxAndTylenol === "available") || (amoxAndTylenol === "not available"))) {
 
                return true;
 
