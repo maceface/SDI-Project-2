@@ -120,7 +120,6 @@ var maceMom = {
 
                },
             
-    };
     
             moviesAndShows: [
 
@@ -181,6 +180,26 @@ var maceMom = {
                ]
             
             
+    };
+    
+/Number Function - number argument, while loop, local variables, math, return string
+
+var timesWatchedVideos = function (watchedVideos) {
+
+        var numberWatched = 20;       
+
+        while (watchedVideos > 10) {
+
+               console.log('Gannon said, "Mommy, I dont\'t feel good.  I just want to lay on the couch and watch TV all day."  Grady looked at Dana and said, "No, I want to watch TV ' + watchedVideos + ' times today." ' + dana.name + ' said "We\'ll watch until we get tired of watching, maybe more like ' + (numberWatched - watchedVideos) + ' times."');
+
+               watchedVideos-=2;
+
+        }
+
+        var finalResults = ('When all was said and done, the Mace family watched ' + watchedVideos + ' times that day." ' + Dana.name + ' said "Wow, I would be okay if I never watched those videos one more time!"');
+
+        return finalResults;
+
 };
 
     
