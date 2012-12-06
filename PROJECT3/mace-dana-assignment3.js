@@ -90,6 +90,7 @@ var maceMom = {
             male: false,
             sick: false,
             hobbies: ["playing the guitar", "spending time with family", "flying"],
+            kiddoNames: ["Grady", "Gannon", "Zella"],
             
 // Function procedure methods
             buyMedicine: function (coughAndColdMedicine) {
@@ -104,33 +105,27 @@ var maceMom = {
                 console.log ('Dana was quite confident that this medicine would help lessen the coughs, but knew that only Tylenol would help if there were fevers.  "Okay, who\'s first?" Dana said as she grabbed hold of Grady and lifted him to her lap. "You have a temperature of... ' + temperatureRead1 + '... That is great!  No tylenol for you... come on over Gannon, up you go!"  Dana checked Gannon\'s temperature next.  "' + temperatureRead2 +'    Yikes that\'s too high!" Dana exclaimed.  You will need to take some tylenol');
             },
             
-//Accessor Method
 
-            getJesse: function () {
-
-                  return maceDad.name;
-
-               },
              
+             
+//Accessor Method 
             getDana: function () {
                 
                     return maceMom.name;
             
                 },
                 
-//Mutator Method
-
-            changeJesseName: function (maceDad) {
-
-                    maceDad.name = honey;
-
-               },
-               
-            changeDanaName: function (maceMom) {
+ //Mutator Method   
+                           
+            changeDanaName: function (mommy) {
                 
                     maceMom.name = mommy;
                     
                 },
+                
+
+
+                
             
     
             moviesAndShows: [
@@ -202,13 +197,13 @@ var timesWatchedVideos = function (watchedVideos) {
 
         while (watchedVideos > 10) {
 
-               console.log('Gannon said, "Mommy, I dont\'t feel good.  I just want to lay on the couch and watch TV all day."  Grady looked at Dana and said, "No, I want to watch TV ' + watchedVideos + ' times today." ' + dana.name + ' said "We\'ll watch until we get tired of watching, maybe more like ' + (numberWatched - watchedVideos) + ' times."');
+               console.log('Gannon said, "Mommy, I dont\'t feel good.  I just want to lay on the couch and watch TV all day."  Grady looked at Dana and said, "No, I want to watch TV ' + watchedVideos + ' times today." Dana said "It won\'t be ' + (numberWatched - watchedVideos) + ' but we\'ll definitely watch as many as we can until we fall asleep."');
 
-               watchedVideos-=2;
+               watchedVideos-=20;
 
         }
 
-        var finalResults = ('When all was said and done, the Mace family watched ' + watchedVideos + ' times that day." ' + Dana.name + ' said "Wow, I would be okay if I never watched those videos one more time!"');
+        var finalResults = ('Dana wished that by the time the day was over they would have watched ' + watchedVideos + ' times that day." She thought "Wow, I would be okay if I never watched those videos one more time!"');
 
         return finalResults;
 
@@ -238,15 +233,15 @@ var watchMoreVideos = function (howManyMoreVideos) {
 
         var numberOfVideos = 20;
 
-        var platform = ("downstairs TV");
+        var whereWatched = ("downstairs TV");
 
-        if (whereWatched < howManyMoreVideos) {
+        if (numberOfVideos < howManyMoreVideos) {
 
-               maceDad.changeName("Honey")
+               maceMom.changeDanaName("Honey")
 
-               console.log('Dana thought to herself, "Wish my ' + maceDad.getName() + ' was here to watch more videos.  I can\'t take much more!"');
+               console.log('Dana thought to herself, "Wish my ' + maceMom.getDana() + ' was here to watch more videos.  I can\'t take much more!"');
 
-               console.log('"Okay, what\'s next?" She said to the boys with a big smile on her face.');
+               console.log('"Okay, what\'s next?" She said to the boys with a big smile on her face, trying to hide her thoughts and feelings.');
 
                console.log('"Can we watch Diego agian on the iPad?" Gannon asked.')
 
@@ -258,7 +253,7 @@ var watchMoreVideos = function (howManyMoreVideos) {
 
                } else {
 
-                       console.log('"Sure, that will be even better," Dana said with a little excitement.  The sound of the TV was beginning to really wear on her last nerve.');
+                       console.log('"Sure, that will be fun!" Dana said with a little bit of excitement.  The sound of the TV was beginning to really wear on her last nerve.');
 
                        console.log('"Here you go.  Lay down here and enjoy the show!"  Dana handed the boys the iPad where they were laying on the floor and walked away to go clean up some messes and change the baby\'s diaper.');
 
@@ -266,7 +261,7 @@ var watchMoreVideos = function (howManyMoreVideos) {
 
         } else {
 
-               console.log('"Yeah, let\'s watch it together in the tent in your room with the baby.  It will be fun.  Like a miny campout, but in the hosue." Dana told the boys.');
+               console.log('"Yeah, let\'s watch it together in the tent in your room with the baby.  It will be fun.  Like a miny campout, but in the house." Dana told the boys.');
 
         }
 
@@ -314,7 +309,7 @@ var boughtAmox = function (pharmacyPrice) {
 
 var giveMedicine = function () {
 
-        return maceDad.children[0, 1, 2];
+        return maceMom.moviesAndShows[0];
 
 };
 
@@ -347,22 +342,22 @@ var waveBye = function (person) {
             
             
 //OUTPUT
-console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car.  She sort of wished it was her getting into the car.  She knew it was going to be a long day with 3 sick kids in the house.  Dana waved and said softly to herself, " + waveBye(Jesse));
+console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car.  She sort of wished it was her getting into that car.  She knew it was going to be a long day with 3 sick kids in the house.  Dana waved as she said, " + waveBye(maceDad));
 
-console.log('"Have a nice day at work.  We may go to the doctor today.  If we do can you pick the prescriptions up on your way home for ' + giveMedicine().children + ' on your way home tonight?" Dana asked.');
+console.log('"Have a nice day at work.  We\'ll be watching the ' + giveMedicine().name + ' all day, or something of the like.  Maybe you can also watch it with us a couple of times when you get home!" Dana said sarcastically.');
             
-console.log('"Sure, I can do that.  I hope they won\'t need it though.  Although, they have been pretty sick.  Call me and let me know if Gannon\'s fever breaks." Jesse replied.');
+console.log('"Sure, I can do that.  I hope they feel better soon so you won\'t have to be stuck in front of the TV all day though.  Although, they have been pretty sick.  Call me and let me know if Gannon\'s fever breaks." Jesse replied.');
 
 console.log("Jesse went off to work for the day and Dana watched his car drive off until it was no longer visible.");
 
-console.log("When Dana went back in, Grady and Gannon were both laying on the couches all bundled up in blankets.  This was definitely not normal for toddlers, much less twin boys.");
+console.log('When Dana went back in, Grady and Gannon were both laying on the couches all bundled up in blankets.  This was definitely not normal for her "little men".');
 
-console.log('"' + maceMom.changeName() + ' I\'m tired and don\'t feel good.  Can we watch some movies?" Grady whimpered. "' + maceMom.changeName() +'? Will you hold me?"  Gannon cried.');
+console.log('"I\'m starting to get tired too," Dana said.  "I can be here all day to help you, ' + maceMom.getDana() + ', if you need it."  Startled, Dana turned around.  It was her mother!  Everyone was happy to see her.  "Can we watch some movies?" Grady whimpered. "Will you hold me mommy?"  Gannon cried.');
 
 watchMoreVideos(3);
 
 
-console.log('Dana said, "I don\'t think we\'ll watch that many, but you can definitely watch as much as the day will permit."');
+console.log('Dana said, "I don\'t think we\'ll really watch TV all day, but you can definitely watch until you fall asleep."');
 
 var notEvenClose = timesWatchedVideos(100);
 
