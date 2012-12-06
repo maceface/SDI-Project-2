@@ -3,7 +3,7 @@
 //Dana Mace
 //Project 2
 //SDI 1212
-//Objects
+//Objects - My life this past week with a bunch of sickies...
 
 //Simple Greeting
 var greetByName = function(name) {
@@ -111,14 +111,26 @@ var maceMom = {
                   return maceDad.name;
 
                },
-               
+             
+            getDana: function () {
+                
+                    return maceMom.name;
+            
+                },
+                
 //Mutator Method
 
             changeJesseName: function (maceDad) {
 
-                       maceDad.name = honey;
+                    maceDad.name = honey;
 
                },
+               
+            changeDanaName: function (maceMom) {
+                
+                    maceMom.name = mommy;
+                    
+                },
             
     
             moviesAndShows: [
@@ -314,7 +326,7 @@ var goToBedEarly = function (kidsStillSick) {
 
         if (kidsStillSick) {
 
-               console.log("Onces the kids all got their baths and the PJs were on, Dana\'s hubby, " + maceDad["name"] + " got home.  He helped put the sick babies down for bed.  After which Dana and Jesse got out the instruments.  While he was " + maceDad.hobbies[0] + ", Dana was " + maceMom.hobbies[0]trip + ".  Once the stress was relieved, they went to bed only to relive another crazy day with sick children.");
+               console.log("Onces the kids all got their baths and the PJs were on, Dana\'s hubby, " + maceDad["name"] + " got home.  He helped put the sick babies down for bed.  After which Dana and Jesse got out the instruments.  While he was " + maceDad.hobbies[0] + ", Dana was " + maceMom.hobbies[0] + ".  Once the stress was relieved by the music, they went to bed only to relive another crazy day with sick children when they woke up.");
 
         } else {
 
@@ -336,4 +348,16 @@ var waveBye = function (person) {
             
 //OUTPUT
 console.log("Dana\'s husband, " + maceDad["name"] + " kissed her good bye before leaving for work.  She watched him as he walked out to the car.  She sort of wished it was her getting into the car.  She knew it was going to be a long day with 3 sick kids in the house.  Dana waved and said softly to herself, " + waveBye(Jesse));
+
+console.log('"Have a nice day at work.  We may go to the doctor today.  If we do can you pick the prescriptions up on your way home for ' + giveMedicine().children + ' on your way home tonight?" Dana asked.');
+            
+console.log('"Sure, I can do that.  I hope they won\'t need it though.  Although, they have been pretty sick.  Call me and let me know if Gannon\'s fever breaks." Jesse replied.');
+
+console.log("Jesse went off to work for the day and Dana watched his car drive off until it was no longer visible.");
+
+console.log("When Dana went back in, Grady and Gannon were both laying on the couches all bundled up in blankets.  This was definitely not normal for toddlers, much less twin boys.");
+
+console.log('"' + maceMom.changeName() + ' I\'m tired and don\'t feel good.  Can we watch some movies?" Grady whimpered. "' + maceMom.changeName() +'? Will you hold me?"  Gannon cried.');
+
+watchMoreVideos(3);
 
