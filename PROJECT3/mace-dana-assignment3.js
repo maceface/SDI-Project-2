@@ -93,7 +93,7 @@ var maceMom = {
             
 // Function procedure methods
             buyMedicine: function (coughAndColdMedicine) {
-                console.log ('After a sleepless night of coughing and sniffles, Dana decided to go to the store to buy some ' +  coughAndColdMedicine + 'for the kiddos.');
+                console.log ('After '+ daysChildrenSick +' sleepless nights of coughing and sniffles from all '+ sickMaces +', and not wanting a repeat, Dana decided to go to the store to buy some ' +  coughAndColdMedicine + 'for the kiddos.');
             },
             
             administerMedicine: function (toTwins) {
@@ -368,6 +368,45 @@ var notEvenClose = timesWatchedVideos(100);
 
 console.log(notEvenClose);
 
+
+console.log("Grady was so excited, Dana almost forgot that he was sick and that she needed to check his temperature for a fever.")
+
+var fever = getTemp('"You have no fever.', ', Your fever is worse, let\'s go to the doctors"');
+
+console.log(fever);
+
+
+console.log('Patrick went to the counter and the store clerk asked him "What can I do for you?"');
+
+var goingToStore = ("Cough and Cold Medicine")
+
+maceMom.buyMedicine(goingToStore)
+
+maceMom.administerMedicine(toTwins)
+console.log("Grady and Gannon")
+
+maceMom.getTemp(temperatureRead1, temperatureRead2)
+
+
+//Boolean Function
+
+var watchingFavoriteMovie = (maceMom.moviesAndShows[0].name)
+
+maceMom.buyMedicine(watchingFavoriteMovie)
+
+console.log('Dana said to the boys, Nana Gaga is coming to stay with you while you watch your favorite movie.  I am going to run to the store.');
+
+if (getDoctor(102.9, "amoxAndTylenol")) {
+
+        console.log('"Your fevers are so high, I just called the doctor and she called in a prescription for all three of you.  I\'m going to pick it up.  Be right back."');
+
+} else {
+
+        console.log('"Your fevers are gone... let\'s go outside and play!"');
+
+};
+
+ 
 
 
 
