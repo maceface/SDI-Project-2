@@ -302,9 +302,9 @@ var takeTempAgain = function (temp1, temp2) {
 
 //Number Function - number argument, output, return number
 
-var boughtAmox = function (pharmaceyPrice) {
+var boughtAmox = function (pharmacyPrice) {
 
-        var totalWithTax = (healthAccount + pharmaceyPrice);
+        var totalWithTax = (pharmacyDiscount + pharmacyPrice);
 
         return totalWithTax;
 
@@ -405,6 +405,24 @@ if (getDoctor(102.9, "amoxAndTylenol")) {
         console.log('"Your fevers are gone... let\'s go outside and play!"');
 
 };
+
+
+console.log('Gannon started to cry as Dana started to leave.  He did not want her to go anywhere.  She said, "Just watch your movie and I will be back before you know it.  This is your favorite movie.  It\'s the ' + maceMom.moviesAndShows[0].name + ', and I would say that you and Grady give it a '+ maceMom.moviesAndShows[0].myKidsRating +'."')
+
+console.log("I promise, I'll fly like a jet and be home in no time.");
+
+ 
+
+console.log('By the time Dana got home from the store, the kids were ' + maceDad.children.twin1.hobbies[0] + ' and ' + maceDad.children.twin2.hobbies[0] +'.  "Well," Dana said, "I guess you didn\'t miss me that much!"  She could tell that they still were not really feeling that much better though.');
+
+console.log('The children purked up even more at the sight of their mom');
+
+ 
+
+var boughtPrescription = boughtAmox(58);
+
+console.log("With the Rite Aid Wellness Card, Dana got a discount of " + pharmacyDiscount + " dollars. She was happy that she got everything including a candy bar for, " + boughtAmox + " dollars.");
+
 
  
 
