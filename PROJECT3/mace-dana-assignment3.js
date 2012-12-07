@@ -203,7 +203,7 @@ var timesWatchedVideos = function (watchedVideos) {
 
         }
 
-        var finalResults = ('Dana wished that by the time the day was over they would have watched ' + watchedVideos + ' times that day." She thought "Wow, I would be okay if I never watched those videos one more time!"');
+        var finalResults = ('Dana wished that by the time the day was over they would have watched only' + watchedVideos + ' times that day. "Wow," she thought, "I would be okay if I never had to watch one more movie for a long time, especially one of those!"');
 
         return finalResults;
 
@@ -285,9 +285,9 @@ var getDoctor = function (fever, amoxAndTylenol) {
 
 //String Function - string argument, string concatination, return string
 
-var takeTempAgain = function (temp1, temp2) {
+var takeTempAgain = function (low, high) {
 
-        var miserable = ("They both cried.  All they wanted to do was sleep " + temp1 + temp2);
+        var miserable = ("They both cried.  All they wanted to do was sleep " + low + high);
 
         return miserable;
 
@@ -321,7 +321,7 @@ var goToBedEarly = function (kidsStillSick) {
 
         if (kidsStillSick) {
 
-               console.log("Onces the kids all got their baths and the PJs were on, Dana\'s hubby, " + maceDad["name"] + " got home.  He helped put the sick babies down for bed.  After which Dana and Jesse got out the instruments.  While he was " + maceDad.hobbies[0] + ", Dana was " + maceMom.hobbies[0] + ".  Once the stress was relieved by the music, they went to bed only to relive another crazy day with sick children when they woke up.");
+               console.log("Once the kids all got their baths and the PJs were on, Dana\'s hubby, " + maceDad["name"] + " got home.  He helped put the sick babies down for bed.  After which Dana and Jesse got out the instruments.  While he was " + maceDad.hobbies[0] + ", Dana was " + maceMom.hobbies[0] + ".  Once the stress was relieved by the music, they went to bed only to relive another crazy day with sick children when they woke up.");
 
         } else {
 
@@ -364,23 +364,23 @@ var notEvenClose = timesWatchedVideos(100);
 console.log(notEvenClose);
 
 
-console.log("Grady was so excited, Dana almost forgot that he was sick and that she needed to check his temperature for a fever.")
+console.log("Grady was so excited to watch more, that Dana almost forgot he was sick.  At that point she remembered that she needed to check his temperature for a fever.")
 
-var fever = getTemp('"You have no fever.', ', Your fever is worse, let\'s go to the doctors"');
+var fever = takeTempAgain('They both still felt warm to her, so she decided to take their temperatures.');
 
 console.log(fever);
 
 
-console.log('Patrick went to the counter and the store clerk asked him "What can I do for you?"');
+
+console.log('Dana called the doctor.');
 
 var goingToStore = ("Cough and Cold Medicine")
 
 maceMom.buyMedicine(goingToStore)
 
-maceMom.administerMedicine(toTwins)
-console.log("Grady and Gannon")
+maceMom.administerMedicine()
 
-maceMom.getTemp(temperatureRead1, temperatureRead2)
+
 
 
 //Boolean Function
@@ -389,7 +389,7 @@ var watchingFavoriteMovie = (maceMom.moviesAndShows[0].name)
 
 maceMom.buyMedicine(watchingFavoriteMovie)
 
-console.log('Dana said to the boys, Nana Gaga is coming to stay with you while you watch your favorite movie.  I am going to run to the store.');
+console.log('Dana said to the boys, Nana Gaga is going to stay with you while you watch your favorite movie.  I am going to run to the store.');
 
 if (getDoctor(102.9, "amoxAndTylenol")) {
 
