@@ -4,7 +4,7 @@
    Code Library
 */
 
-var myLibrary = function (){
+var myLibrary = function(){
     
 //.............STRINGS..............
     
@@ -12,7 +12,7 @@ var myLibrary = function (){
     
     var checkPhoneNum = function (phoneNum) {
 
-        if (phoneNum.match(/\d{3}\-\d{3}\-\d{4}/)) { //Regex insures string is formatted with 3 digits, a dash, 3 digits, another dash, and then 4 digits.
+        if (phoneNum.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)) { //Regex insures string is formatted with 3 digits, a dash, 3 digits, another dash, and then 4 digits.
             return true;
         } else {
             return false;
@@ -26,7 +26,7 @@ var myLibrary = function (){
 
 
 
-var newLib = new Library ();
+var newLib = new Library();
 
 console.log("Is this a phone number? " + newLib.checkPhoneNum("888-333-1111"));
     
