@@ -83,7 +83,7 @@ var myLibrary = function(){
     
     var formatNum = function (numFormat, precision){
         
-    var decimal = numFormat.toFixed(precision);
+    var decimal = numFormat.toPrecision(precision);
     
         return decimal;
 
