@@ -111,14 +111,23 @@ var myLibrary = function(){
     
     //8.  Find the number of hours or days difference between two dates.
     
-    var today = new Date()
-    
-    var yr = new Date(christmasDay);
-        yr.setYear = today.getYear;
-        daysLeft = (yr.getTime() - today.getTime()) / (1000*60*60*24);
-        daysLeft = Math.round(daysLeft);
-    	
-        return yr
+    var date = function (firstDate,secondDate) {	
+
+        var firstdate = new Date(firstDate);
+
+        var seconddate = new Date(secondDate);
+
+        var diff = seconddate.getTime() - firstdate.getTime();
+
+        var hours = Math.floor(diff/(1000*60*60));
+        
+            return hours;
+
+        var days = Math.floor(hours/24);
+
+            return days;
+
+    };
 
     
     
@@ -136,7 +145,7 @@ var myLibrary = function(){
         //NUMBERS
         "formatNum" : formatNum,
         "fuzzyNumberMatch" : fuzzyNumberMatch,
-        "yr" : yr,
+        "date" : date,
     
     };
     
@@ -170,7 +179,8 @@ console.log(newLib.formatNum(3.3, 3) + " USD");
 console.log("There is a 50% margin between 3 and 6... " + newLib.fuzzyNumberMatch(3,6,50));
     
     //DATES
-console.log("There are only "+ newLib.today("December 25 2012") +" days left until Christmas Day!");
+console.log("I have lived upon the earth for " + newLib.date("July 26,1979 00:01:00","December 12,2012 00:00:00") + " short hours!");
+
 
 
 
