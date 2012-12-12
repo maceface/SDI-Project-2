@@ -128,7 +128,35 @@ var myLibrary = function(){
             return days;
 
     };
+    
+    //9.  Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+    
+    var makeStringNumber = function(stringNum) {
 
+        var product = parseFloat(stringNum);
+            
+            return product;
+    }; 
+
+    
+//.............ARRAYS..............
+
+    //10.  Find the smallest value in an array that is greater than a given number
+    var smallestVal = function(array,val) {
+        
+        var min = array.sort()
+        
+        minValue = min[0]
+    
+        for(var i = 0; i < min.length; i++) {
+                
+            if(min[i] > minValue && min[i] > val) {
+                    
+                return minValue = min[i];
+            }
+        }
+    };
+    
     
     
 //RETURNS    
@@ -146,7 +174,10 @@ var myLibrary = function(){
         "formatNum" : formatNum,
         "fuzzyNumberMatch" : fuzzyNumberMatch,
         "date" : date,
-    
+        "makeStringNumber" : makeStringNumber,
+        
+        //ARRAYS
+        "smallestVal" : smallestVal,
     };
     
 };
@@ -181,6 +212,13 @@ console.log("There is a 50% margin between 3 and 6... " + newLib.fuzzyNumberMatc
     //DATES
 console.log("I have lived upon the earth for " + newLib.date("July 26,1979 00:01:00","December 12,2012 00:00:00") + " short hours!");
 
+    //STRING TO NUMBER
+console.log("10 is a string, but " + newLib.makeStringNumber("10") + " is not");
+
+    //SMALLEST NUMBER IN ARRAY
+console.log(newLib.smallestVal([6,0,7,3],3) + " is the smallest value that is greater than 3.");
+
+    //
 
 
 
