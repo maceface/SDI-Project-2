@@ -64,7 +64,7 @@ var myLibrary = function(){
     
     /*5.  Given a string that is a list of things separated by a given string, as well as another
     string separator, return a string with the first separator changed to the
-    second: "a,b,c" + "," + "/" ? "a/b/c".
+    second: "a,b,c" + "," + "/" to "a/b/c".
     */
     
     changeStringSeparator = function(string, separator1, separator2) {
@@ -73,7 +73,7 @@ var myLibrary = function(){
 
         var reunitedString = splitString.join(separator2);
 
-        return reunitedString;
+            return reunitedString;
     };
     
     
@@ -81,6 +81,14 @@ var myLibrary = function(){
 
     //6.  Format a number to use a specific number of decimal places, as for money: 2.1 to 2.10
     
+    var formatNum = function (numFormat, precision){
+        
+    var decimal = numFormat.toPrecision(precision);
+    
+        return decimal;
+
+    };
+
     
     
 //RETURNS    
@@ -95,7 +103,7 @@ var myLibrary = function(){
         "changeStringSeparator" : changeStringSeparator,
         
         //NUMBERS
-        
+        "formatNum" : formatNum,
     };
     
 };
@@ -121,7 +129,8 @@ console.log("my name is..." + newLib.split("dana noelle mace"));
     //STRING SEPARATOR
 console.log('At the click of a button, we can change "a|b|c" to ' + changeStringSeparator("a|b|c","|","-"));
 
-    //
+    //DECIMALS
+console.log(formatNum(3.3, 3) + " USD");
 
 
 
