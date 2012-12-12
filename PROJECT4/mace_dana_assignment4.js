@@ -157,6 +157,27 @@ var myLibrary = function(){
         }
     };
     
+    //11.  Find the total value of just the numbers in an array, even if some of the items are not numbers.
+    var totalValue = function(array) {
+
+        var sourceArray = array;
+        
+        var addedUpVal = 0;
+
+        for (var i = 0; i < sourceArray.length; i++) {	
+
+            if(!isNaN(sourceArray[i])) {
+
+                addedUpVal = addedUpVal + parseFloat(sourceArray[i]);
+            };
+        };
+
+                return addedUpVal;	
+
+    };
+    
+    //12.  Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] to [{a:1},{a:2},{a:3}].
+    
     
     
 //RETURNS    
@@ -178,6 +199,7 @@ var myLibrary = function(){
         
         //ARRAYS
         "smallestVal" : smallestVal,
+        "totalValue" : totalValue
     };
     
 };
@@ -216,9 +238,10 @@ console.log("I have lived upon the earth for " + newLib.date("July 26,1979 00:01
 console.log("10 is a string, but " + newLib.makeStringNumber("10") + " is not");
 
     //SMALLEST NUMBER IN ARRAY
-console.log(newLib.smallestVal([6,0,7,3],3) + " is the smallest value that is greater than 3.");
+console.log(newLib.smallestVal([6,0,7,3],3) + " is the smallest value in this array that is greater than 3.");
 
-    //
+    //VALUE OF NUMBERS IN ARRAY
+console.log("Even though there are some words in this array, the total value of just the numbers is " + newLib.totalValue(['52',2.5,'Strawberry',13,33,'Neanderthals',88]));
 
 
 
