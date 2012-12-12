@@ -178,6 +178,19 @@ var myLibrary = function(){
     
     //12.  Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] to [{a:1},{a:2},{a:3}].
     
+    var sortObjectsByKey = function (array, key) { 
+    
+        var sortedArray,i;
+            
+            for (i = 0; i < array.length; i += 1) {
+            
+                if (array[i][0] === key) {
+                
+                    sortedArray = array.sort();
+                }
+            }
+                return sortedArray;
+    };
     
     
 //RETURNS    
@@ -199,7 +212,8 @@ var myLibrary = function(){
         
         //ARRAYS
         "smallestVal" : smallestVal,
-        "totalValue" : totalValue
+        "totalValue" : totalValue,
+        "sortObjectsByKey": sortObjectsByKey
     };
     
 };
@@ -243,6 +257,9 @@ console.log(newLib.smallestVal([6,0,7,3],3) + " is the smallest value in this ar
     //VALUE OF NUMBERS IN ARRAY
 console.log("Even though there are some words in this array, the total value of just the numbers is " + newLib.totalValue(['52',2.5,'Strawberry',13,33,'Neanderthals',88]));
 
+    // SORT ARRAY BY KEY
+console.log("This array:[{sortNumber:3},{sortNumber:1},{sortNumber:2}] is going to sort... ");
+console.log(newLib.sortObjectsByKey([{sortNumber:3},{sortNumber:1},{sortNumber:2}],"sortNumber"));
 
 
 /*    //check Numeric Funciton
