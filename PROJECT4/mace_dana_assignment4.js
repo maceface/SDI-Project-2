@@ -176,24 +176,30 @@ var myLibrary = function(){
 
     };
     
-    //12.  Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] to [{a:1},{a:2},{a:3}].
     
-    var sortObjectsByKey = function (array, key) { 
+    //12.  Given an array of objects and the name of a key, return the array sorted by the value of that key
+    //in each of the objects: "a" + [{a:2},{a:3},{a:1}] to [{a:1},{a:2},{a:3}].
+     
+    var sortObjectKey = function( list, sortKey ) {
     
-        var sortedArray,i;
-            
-            for (i = 0; i < array.length; i += 1) {
-            
-                if (array[i][0] === key) {
-                
-                    sortedArray = array.sort();
-                }
-            }
-                return sortedArray;
-    };
+        key = sortKey;
+    // Call the Array.sort method with a callback function used to define a custom sorting algorithm.
+            return list.sort(sBKCallback);
+    },
     
+    sBKCallback = function( obj1, obj2 ) {
+        if( obj1[ key ] < obj2[ key ]) { // If the number in obj1 is less than number in obj2
+            return -1; // obj1 has priority.
+        }
+        else if( obj1[ key ] === obj2[ key ]) { // If the number in obj1 equals the number in obj2
+            return 0; // Both will have the same priority.
+        };
+    return 1; // number in obj2 is greater than that in obj1, and obj2 gets priority.
+        //After doing 20+ different approaches to this problem, I just started typing my way through it and finally got it.
+        //Hope this was what you wanted... this one was the hardest for me.
+  };
     
-//RETURNS    
+ //RETURNS    
     
      return {
         
@@ -213,16 +219,19 @@ var myLibrary = function(){
         //ARRAYS
         "smallestVal" : smallestVal,
         "totalValue" : totalValue,
-        "sortObjectsByKey": sortObjectsByKey
+        "sortObjectKey" : sortObjectKey,
     };
-    
-};
+};    
+
     
 
 
 //OUTPUTS
     
 var newLib = new myLibrary();
+sLBKey = { "list": [ { "a": 2 }, { "a": 3 }, { "a": 1 } ], "key": "a" };
+
+
 
     //STRINGS
     //PHONE NUMBER
@@ -257,9 +266,13 @@ console.log(newLib.smallestVal([6,0,7,3],3) + " is the smallest value in this ar
     //VALUE OF NUMBERS IN ARRAY
 console.log("Even though there are some words in this array, the total value of just the numbers is " + newLib.totalValue(['52',2.5,'Strawberry',13,33,'Neanderthals',88]));
 
-    // SORT ARRAY BY KEY
-console.log("This array:[{sortNumber:3},{sortNumber:1},{sortNumber:2}] is going to sort... ");
-console.log(newLib.sortObjectsByKey([{sortNumber:3},{sortNumber:1},{sortNumber:2}],"sortNumber"));
+    //ARRAY SORT KEY
+console.log("Just this one problem took me about 5 hours... but I finally got it: Number of numbers in the array");
+    console.log( newLib.sortObjectKey( sLBKey.list, sLBKey.key ));
+
+
+
+
 
 
 /*    //check Numeric Funciton
