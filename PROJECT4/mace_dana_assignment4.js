@@ -36,7 +36,9 @@ var myLibrary = function(){
     //3.  Is the string a URL? (Does it start with http: or https:?)
     
     var checkURL = function(uRL) {
+    
     var regex = /^(http|https):/; //Regex: Check for http or https within the string.
+    
     var checkString = regex.test(uRL);
 
         return checkString;
@@ -88,6 +90,24 @@ var myLibrary = function(){
         return decimal;
 
     };
+    
+    
+    //7.  Fuzzy-match a number: is the number above or below a number within a certain percent?
+    
+    var fuzzyNumberMatch = function(number1, number2, percentage) {
+
+    var percentAge = number2*(percentage/100);
+        
+        var product;
+        
+        if(number1 >= number2 - percentAge && number1 <= number2 + percentAge) {
+            product = true;
+        } else {
+            product = false;
+            };
+            
+        return product;
+    };
 
     
     
@@ -104,6 +124,7 @@ var myLibrary = function(){
         
         //NUMBERS
         "formatNum" : formatNum,
+        "fuzzyNumberMatch" : fuzzyNumberMatch
     };
     
 };
@@ -132,6 +153,8 @@ console.log('At the click of a button, we can change "a|b|c" to ' + changeString
     //DECIMALS
 console.log(newLib.formatNum(3.3, 3) + " USD");
 
+    //Fuzzy
+console.log("There is a 50% margin between 3 and 6... " + newLib.fuzzyNumberMatch(3,6,50));
 
 
 
