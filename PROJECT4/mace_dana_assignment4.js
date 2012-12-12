@@ -83,7 +83,7 @@ var myLibrary = function(){
     
     var formatNum = function (numFormat, precision){
         
-    var decimal = numFormat.toPrecision(precision);
+    var decimal = numFormat.toFixed(precision);
     
         return decimal;
 
@@ -130,7 +130,7 @@ console.log("my name is..." + newLib.split("dana noelle mace"));
 console.log('At the click of a button, we can change "a|b|c" to ' + changeStringSeparator("a|b|c","|","-"));
 
     //DECIMALS
-console.log(formatNum(3.3, 3) + " USD");
+console.log(newLib.formatNum(3.3, 3) + " USD");
 
 
 
